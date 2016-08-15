@@ -6,7 +6,7 @@ Easy to write stateless components without using Class. Enjoy functional program
 
 ```javascript
 
-// one day, you coding so happy ^__^
+// one day, you are coding so happy ^__^
 // writing stateless component, do functional programming
 const Users = (props) => <div>
   <ul>
