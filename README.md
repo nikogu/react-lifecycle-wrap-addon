@@ -1,6 +1,6 @@
 # React Lifecycle Wrap Addon
 
-Easy to write stateless component without using Class. Enjoy functional programming.
+Easy to write stateless components without using Class. Enjoy functional programming.
 
 #### Usage: 
 
