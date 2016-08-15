@@ -82,8 +82,8 @@ Users = lifecycle(Users, {
 
 ```javascript
 
-// do not 
-// has effects side
+// wrong
+// effects side
 Users = lifecycle(Users, {
   constructor(props) {
     this.state = {
@@ -98,7 +98,7 @@ Users = lifecycle(Users, {
   },
 });
 
-// do this way
+// right
 Users = lifecycle(Users, {
   componentDidMount(props) {
     props.dispatch({
