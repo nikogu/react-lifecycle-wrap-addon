@@ -1,0 +1,84 @@
+{
+  "name": "react-lifecycle-wrap-addon",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikogu/react-lifecycle-wrap-addon"
+  },
+  "homepage": "https://github.com/nikogu/react-lifecycle-wrap-addon",
+  "keywords": [
+    "react-lifecycle-wrap-addon",
+    "dva",
+    "ant",
+    "react",
+    "redux",
+    "elm",
+    "frontend"
+  ],
+  "author": "nikogu <644506165@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "nyc mocha --compilers js:babel-register --require ./test/setup.js --no-timeouts",
+    "debug": "mocha --compilers js:babel-register --require ./test/setup.js --no-timeouts",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "lint": "eslint --ext .js src test",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "~6.5.0",
+    "babel-register": "^6.11.5",
+    "babel-runtime": "^6.9.2",
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "coveralls": "^2.11.11",
+    "envify": "^3.4.1",
+    "eslint": "^3.0.1",
+    "eslint-config-rackt": "^1.1.1",
+    "eslint-plugin-react": "^6.0.0",
+    "expect": "^1.20.2",
+    "jsdom": "^9.4.2",
+    "mocha": "^3.0.2",
+    "nyc": "^7.1.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "rimraf": "^2.5.4",
+    "uglifyjs": "^2.4.10"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "browserify-shim": {
+    "react": "global:React",
+    "react-dom": "global:ReactDOM"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "add-module-exports",
+      "transform-runtime"
+    ]
+  },
+  "files": [
+    "lib",
+    "src",
+    "dist",
+    "index.js"
+  ]
+}
