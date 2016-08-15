@@ -1,7 +1,6 @@
 import React from 'react';
 
 function wrap(Component, $) {
-
   const _f = [
     'constructor',
     'componentWillMount',
@@ -18,10 +17,9 @@ function wrap(Component, $) {
 
   const _call = (num, ...args) => {
     $[_f[num]] && $[_f[num]].call(this, ...args);
-  }
+  };
 
-  const Default = React.createClass({
-
+  return React.createClass({
     getInitialState() {
       _call(0, this.props);
       if (this.state) return this.state;
@@ -59,9 +57,8 @@ function wrap(Component, $) {
     render() {
       return <Component {...this.props} />;
     }
-  })
-
-  return Default;
+  });
 }
 
 export default wrap;
+
