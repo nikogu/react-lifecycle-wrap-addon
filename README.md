@@ -19,7 +19,7 @@ const Users = (props) => <div>
 // and then, need do something in react component's lifecycle, but pure.
 
 // change to class
-// not so happy ~__~
+// not happy ~__~
 import { Component } from React;
 class Users extends Component {
   componentDidMount() {
