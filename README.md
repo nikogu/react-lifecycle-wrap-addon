@@ -1,6 +1,11 @@
 # React Lifecycle Wrap Addon
 
+[![NPM version](https://img.shields.io/npm/v/react-lifecycle-wrap-addon.svg?style=flat)](https://npmjs.org/package/react-lifecycle-wrap-addon)
+[![NPM downloads](http://img.shields.io/npm/dm/react-lifecycle-wrap-addon.svg?style=flat)](https://npmjs.org/package/react-lifecycle-wrap-addon)
+
 Easy to write stateless components without using Class. Enjoy functional programming.
+
+----
 
 #### Usage: 
 
