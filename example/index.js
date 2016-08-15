@@ -6,6 +6,7 @@ import { connect } from 'dva';
 import { Router, Route, useRouterHistory } from 'dva/router';
 import { createHashHistory } from 'history';
 
+//import lifecycle from 'react-lifecycle-wrap-addon';
 import lifecycle from '../src/index';
 
 // 1. Initialize

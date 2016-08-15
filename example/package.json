@@ -6,7 +6,8 @@
     "dva": "^0.0.15",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "history": "^2.0.1"
+    "history": "^2.0.1",
+    "react-lifecycle-wrap-addon": "*"
   },
   "devDependencies": {
     "atool-build": "^0.7.6",
@@ -17,6 +18,7 @@
     "dora-plugin-webpack": "0.6.x",
     "dora-plugin-webpack-hmr": "^0.1.0"
   },
+  "babel": {},
   "scripts": {
     "start": "dora --plugins \"proxy,webpack,webpack-hmr\"",
     "build": "atool-build"
